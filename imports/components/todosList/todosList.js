@@ -14,7 +14,7 @@ class TodosListCtrl {
 		 * When $scope.subscribe is called on the client with the publication name, the client subscribes to all the data 
 		 * from that publication, which in this case is all of the tasks in the database.
 		 */
-		this.subscribe('tasks'); 
+		this.subscribe('tasks');
 		
 		this.hideCompleted = false;
 		
@@ -67,7 +67,7 @@ class TodosListCtrl {
 	}
 	
 	setPrivate(task) {
-		Meteor.call('tasks.setPrivate', task._id, !task.private);
+		Meteor.call('tasks.setPrivate', task._id, !task.private); // Calls the method "tasks.setPrivate" found in imports/api/tasks.js
 	}
 }
  
