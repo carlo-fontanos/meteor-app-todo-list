@@ -4,10 +4,13 @@ Sample meteor app with MongoDB as database and a simple implementation of built-
 ## Deploying to Heroku
 Required softwares:
 - **Meteor** - Download it from here: https://www.meteor.com/install
-- **Heroku** - Download it from here: https://toolbelt.heroku.com/
+- **Heroku** - Download it from here: https://toolbelt.heroku.com
 - **Git** - Download it from here: https://git-scm.com/downloads
 	
-1. Clone github project.
+1. Clone github project to your computer.
+	- `$ git clone https://github.com/carlo-fontanos/meteor-app-todo-list.git`
+2. Navigate to the cloned folder.
+	- In windows: `$ cd meteor-app-todo-list`
 2. `$ heroko login`
 	- Fill up credentials
 	- If you do not have an account yet, you can register for one at http:/heroku.com
