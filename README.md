@@ -25,10 +25,10 @@ Required softwares:
 	- `$ heroku config:add MONGO_URL=<MONGODB_URI value>`
 		- You can get MONGO_URL by running: 
 			`$ heroku config`
-	- $ heroku config:add ROOT_URL=https://NAME_OF_PROJECT.herokuapp.com
+	- `$ heroku config:add ROOT_URL=https://NAME_OF_PROJECT.herokuapp.com`
 7. Check if we can push to heroku:
 	- `$ git remote -v`
-		- Should give you a list of gits from github and heroku github.
+		- Should give you a list of git URLS (github and heroku github).
 		- if heroku link is not in the list, you can manually add it like this:
 			`$ git remote add heroku https://git.heroku.com/NAME_OF_PROJECT.git`
 8. Deploy our code:
