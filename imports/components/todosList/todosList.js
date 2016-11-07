@@ -9,7 +9,12 @@ class TodosListCtrl {
 	constructor($scope) {
 		$scope.viewModel(this);
 		
-		this.subscribe('tasks');
+		/**  
+		 * Calling Meteor.publish on the server (code found in imports/api/tasks.js) registers a publication named "tasks"
+		 * When $scope.subscribe is called on the client with the publication name, the client subscribes to all the data 
+		 * from that publication, which in this case is all of the tasks in the database.
+		 */
+		this.subscribe('tasks'); 
 		
 		this.hideCompleted = false;
 		
@@ -59,6 +64,10 @@ class TodosListCtrl {
 
 	removeTask(task) {
 		Meteor.call('tasks.remove', task._id); // Calls the method "tasks.remove" found in imports/api/tasks.js
+	}
+	
+	setPrivate(task) {
+		Meteor.call('tasks.setPrivate', task._id, !task.private);
 	}
 }
  
