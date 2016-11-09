@@ -37,5 +37,5 @@ Required softwares:
 	- `$ git push heroku master`
 
 ### Optional
-	Deploy app to your mobile device using Heroku project URL as server, run: 
+Deploy app to your mobile device using Heroku project URL as server:  
 	- `$ meteor run android-device --mobile-server https://YOU_HEROKU_APP_SLUG.herokuapp.com/`
