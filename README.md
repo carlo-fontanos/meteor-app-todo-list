@@ -2,7 +2,7 @@
 Sample meteor app with MongoDB as database and a simple implementation of built-in user authentication.
 
 ## Deploying to Heroku
-You follow steps bellow to get this project running on Heroku for your personal testing. 
+Follow the steps bellow to get this project running on Heroku for your personal testing. 
 
 Required softwares:
 - **Meteor** - Download it from here: https://www.meteor.com/install
