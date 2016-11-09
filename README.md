@@ -2,6 +2,8 @@
 Sample meteor app with MongoDB as database and a simple implementation of built-in user authentication.
 
 ## Deploying to Heroku
+You follow steps bellow to get this project running on Heroku for your personal testing. 
+
 Required softwares:
 - **Meteor** - Download it from here: https://www.meteor.com/install
 - **Heroku** - Download it from here: https://toolbelt.heroku.com
@@ -33,3 +35,7 @@ Required softwares:
 			`$ git remote add heroku https://git.heroku.com/NAME_OF_PROJECT.git`
 8. Deploy our code:
 	- `$ git push heroku master`
+
+### Optional
+	Deploy app to your mobile device using Heroku project URL as server, run: 
+	- `$ meteor run android-device --mobile-server https://YOU_HEROKU_APP_SLUG.herokuapp.com/`
