@@ -1,5 +1,6 @@
 import angular from 'angular';
 import angularMeteor from 'angular-meteor';
+import ngMaterial from 'angular-material';
 import { Meteor } from 'meteor/meteor';
 import { Tasks } from '../../api/tasks.js';
 
@@ -11,7 +12,7 @@ class TodosListCtrl {
 		
 		/**  
 		 * Calling Meteor.publish on the server (code found in imports/api/tasks.js) registers a publication named "tasks"
-		 * When $scope.subscribe is called on the client with the publication name, the client subscribes to all the data 
+		 * When $scope.subscribe is called on the client (here) with the publication name, the client subscribes to all the data 
 		 * from that publication, which in this case is all of the tasks in the database.
 		 */
 		this.subscribe('tasks');
@@ -72,7 +73,8 @@ class TodosListCtrl {
 }
  
 export default angular.module('todosList', [
-	angularMeteor
+	angularMeteor,
+	ngMaterial
 ])
 	.component('todosList', {
 		templateUrl: 'imports/components/todosList/todosList.html',
